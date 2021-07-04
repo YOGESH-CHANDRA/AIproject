@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Assessment1</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .sidebar {
+        width: 110px;
+        height: 100vh;
+      }
+      .icon {
+        text-align: center;
+        padding: 30px 0px 40px 0px;
+        height: 05vh;
+        border: 2px solid white;
+      }
+      .icon1 {
+        padding: 40px 0;
+      }
+      .sidebar img {
+        width: 40px;
+        margin-bottom: -22px;
+        padding: 0;
+      }
+      .main {
+        width: calc(100vw - 110px);
+        height: 100vh;
+        text-align: center;
+        background-color: rgb(248, 239, 239);
+      }
+      .head {
+        height: 114px;
+        background-color: rgb(250, 252, 230);
+      }
+      .vid {
+        padding: 20px;
+        text-align: left;
+      }
+      input[type="url"] {
+        width: 50vw;
+        height: 40px;
+        border-radius: 10px;
+        padding-left: 10px;
+        margin-top: 50px;
+      }
+      .upload {
+        position: relative;
+        left: 380px;
+        width: 180px;
+        height: 180px;
+        left: 260px;
+      }
+     input[type="file"] {
+        width: 180px;
+        height: 180px;
+        position:relative;
+        background-color: blanchedalmond;
+        opacity: 0;
+        z-index: 2;
+      }
+      .upl{
+          color: black;
+          top: 50%;
+          width: 100px;
+        height: 60px;
+          position: absolute;
+          z-index:1;
+          background-color:#fff;
+          margin-top: -90px;
+          padding: 60px 40px;      
+      }
+      .icon:hover{
+          background-color: rgb(192, 236, 155);
+          border-left: 2px solid;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="icon icon1"><img src="./images/icon.png" /></div>
+        <div class="icon">
+          <div><img src="./images/students.png"/></div>
+          <div>
+            <h5>Students</h5>
+          </div>
+        </div>
+        <div class="icon">
+          <div><img src="./images/lessons_plan.png" /></div>
+          <div>
+            <h5>Lesson Plan</h5>
+          </div>
+        </div>
+        <div class="icon">
+          <div><img src="./images/settings.png" /></div>
+          <div>
+            <h5>Settings</h5>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="head"></div>
+        <div class="vid">&#129088; Videos</div>
+        <div class="url">
+          <input type="url" name="" id="" placeholder="insert url here" />a
+        </div>
+        <div>
+          <h4>or</h4>
+        </div>
+        <div class="upload"><input type="file" value="upload"/>
+        <div class="upl"><b>upload</b></div></div>
+      </div>
+    </div>
+  </body>
+</html>
